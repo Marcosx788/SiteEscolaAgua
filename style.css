@@ -1,0 +1,249 @@
+:root {
+	--primary-color: #000000; /* Cor principal */
+	--secundary-color: white; /* Cor secundária */
+}
+
+/* Importa fonte Lato */
+@import url("https://fonts.google.com/share?selection.family=Open+Sans:ital,wght@0,300..800;1,300..800|Playfair+Display:ital,wght@0,400..900;1,400..900");
+
+/* Config da fonte Lato */
+.lato-thin {
+	font-family: "Playfair Display", serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.lato-light {
+	font-family: "Playfair Display", serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.lato-regular {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.lato-bold {
+	font-family: "Playfair Display", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.lato-black {
+	font-family: "Playfair Display", serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.lato-thin-italic {
+	font-family: "Playfair Display", serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.lato-light-italic {
+	font-family: "Playfair Display", serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.lato-regular-italic {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.lato-bold-italic {
+	font-family: "Playfair Display", serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.lato-black-italic {
+	font-family: "Playfair Display", serif;
+	font-weight: 900;
+	font-style: italic;
+}
+
+/* Aplica fonte, cor do texto e cursor */
+* {
+	box-sizing: border-box;
+	font-family: "Playfair Display", sans-serif;
+	color: var(--primary-color);
+	text-rendering: auto;
+	image-rendering: auto;
+	shape-rendering: auto;
+}
+/* Reseta margens do body */
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Caso tenha botão, yuri fica com vergonha */
+/* Body com tamanho dependendo do navegador e background */
+body {
+	background-image: url("assets/giphy.gif");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 0;
+	overflow: auto !important;
+}
+
+#top-banner,
+#top-banner span {
+	background-color: var(--primary-color);
+	color: var(--secundary-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	width: 100vw;
+	box-sizing: border-box;
+}
+
+#icon-logo {
+	width: 48px;
+	height: 48px;
+}
+#title {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 3em;
+}
+.subtitle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+    font-size: 50px;
+}
+
+#description {
+	max-width: 70vw;
+	margin: 5vh auto;
+	padding: 25px;
+	border: 1px solid var(--secundary-color);
+	border-radius: 20px;
+	backdrop-filter: blur(12px) saturate(200%);
+	font-size: 25px;
+}
+
+#ready {
+	display: flex;
+	justify-content: center;
+	margin: 40px;
+	font-style: italic;
+  transform: skewX(-5deg);
+  background-color: #450a89;
+  padding: 10px 10px;
+  border-radius: 25px;
+}
+
+/* 5vh auto 0 */
+
+#botao-tradução {
+	width: 200px;
+	height: 55px;
+	background-position: center;
+	border-radius: 20px;
+	background-color: #393535;
+	font-style: oblique;
+	font-size: 25px;
+}
+
+#botao-tradução {
+    display: block;
+    margin: 20px auto;
+	font-size: 38px;
+}
+
+#botao-historia {
+	width: 200px;
+	height: 55px;
+	border-radius: 20px;
+	background-color: blueviolet;
+	font-style: oblique;
+	font-size: 25px;
+}
+
+#botao-historia {
+    display: block;
+    margin: 20px auto;
+}
+
+#text-size-true {
+	font-size: 40px;
+}
+
+.small-text {
+	font-size: 14;
+}
+
+#center-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 2px auto;
+    border-radius: 10px;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+#container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.trail {
+    /* Substitua o CSS anterior por: */
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+    filter: blur(1px);
+    transition: transform 0.1s ease-out;
+}
+
+.sakura {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-image: url('assets/');
+	background-size: cover;
+	pointer-events: none;
+	animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
